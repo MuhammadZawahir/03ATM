@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ATM</title>
+</head>
+<body>
+    <div id="welcomePg">
+        <h1>HBL</h1>
+        <input type="password" id="atmPin" placeholder="PIN">
+        <br>
+        <br>
+        <button type="submit" id="pinBtn">Submit</button>
+    </div>
+    
+    <div id="actionChoicePg">
+        <h1>Action Choice</h1>
+        <p>What would you like to do?</p>
+        <ul>
+            <li><button type="button" id="withdrawalBtn">Withdrawal</button></li>
+            <li><button type="button" id="depositBtn">Deposit</button></li>
+            <li><button type="button" id="balanceInquiryBtn">Balance Inquiry</button></li>
+        </ul>
+    </div>
+
+    <div id="withdrawalPg">
+        <h1>Withdrawal</h1>
+        <label for="withdrawalAmount">Enter the amount you would like to withdraw: $</label>
+        <input type="number" placeholder="999" id="withdrawalAmount">
+        <br><br>
+        <button type="submit" id="withdrawalSubmitBtn">Submit</button>
+    </div>
+
+    <div id="depositPg">
+        <h1>Deposit</h1>
+        <label for="depositAmount">Enter the amount you would like to deposit: $</label>
+        <input type="number" placeholder="999" id="depositAmount">
+        <br><br>
+        <button type="submit" id="depositSubmitBtn">Submit</button>
+    </div>
+
+    <div id="balanceInquiryPg">
+        <h1>Balance Inquiry</h1>
+        <label for="balance">Balance: $</label>
+        <output id="balance"></output>
+        <br><br>
+        <button type="submit" id="balanceInquirySubmitBtn">Ok</button>
+    </div>
+
+    <div id="byePg">
+        <h1>GoodBye</h1>
+        <p>Thank You for choosing HBL</p>
+        <button type="reset" onclick="Home()">Reset</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
